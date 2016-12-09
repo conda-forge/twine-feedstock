@@ -11,6 +11,18 @@ Summary: Collection of utilities for interacting with PyPI
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/twine-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/twine-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/twine-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/twine-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/twine-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/twine-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/twine/badges/version.svg)](https://anaconda.org/conda-forge/twine)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/twine/badges/downloads.svg)](https://anaconda.org/conda-forge/twine)
+
 Installing twine
 ================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `twine` available on your platform
 ```
 conda search twine --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/twine-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/twine-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/twine-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/twine-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/twine-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/twine-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/twine/badges/version.svg)](https://anaconda.org/conda-forge/twine)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/twine/badges/downloads.svg)](https://anaconda.org/conda-forge/twine)
 
 
 Updating twine-feedstock
