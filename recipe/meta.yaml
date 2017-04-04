@@ -42,10 +42,12 @@ test:
 
 about:
   home: https://github.com/pypa/twine
-  license: Apache Software License 2.0
+  license: Apache  2.0
+  license_family: Apache
   license_file: LICENSE
   summary: 'Collection of utilities for interacting with PyPI'
 
 extra:
   recipe-maintainers:
     - janschulz
+    - SylvainCorlay
