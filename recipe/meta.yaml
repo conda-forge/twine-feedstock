@@ -23,7 +23,7 @@ requirements:
     - requests >=2.5.0
     - requests-toolbelt >=0.5.1
     - setuptools >=0.7.0
-    - clint
+    - tqdm
     
   run:
     - python
@@ -31,7 +31,7 @@ requirements:
     - requests >=2.5.0
     - requests-toolbelt >=0.5.1
     - setuptools >=0.7.0
-    - clint
+    - tqdm
 
 test:
   imports:
