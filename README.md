@@ -14,14 +14,15 @@ Summary: Collection of utilities for interacting with PyPI
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/twine-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/twine-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/twine-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/twine-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/twine-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/twine-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/twine-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/twine-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/twine/badges/version.svg)](https://anaconda.org/conda-forge/twine)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/twine/badges/downloads.svg)](https://anaconda.org/conda-forge/twine)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-twine-green.svg)](https://anaconda.org/conda-forge/twine) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/twine.svg)](https://anaconda.org/conda-forge/twine) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/twine.svg)](https://anaconda.org/conda-forge/twine) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/twine.svg)](https://anaconda.org/conda-forge/twine) |
 
 Installing twine
 ================
