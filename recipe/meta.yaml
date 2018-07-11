@@ -1,4 +1,4 @@
-{% set version = "1.10.0" %}
+{% set version = "1.11.0" %}
 
 package:
   name: twine
@@ -7,17 +7,19 @@ package:
 source:
   fn: twine-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/t/twine/twine-{{ version }}.tar.gz
-  sha256: c3540f2b98667698412b0dc9f5e40c8c1a08a9e79e255c9c21339105eb4ca57a
+  sha256: 2fd9a4d9ff0bcacf41fdc40c8cb0cfaef1f1859457c9653fd1b92237cc4e9f25
 
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  number: 1
+  script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - twine = twine.__main__:main
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - pkginfo >=1.0
     - requests >=2.5.0
@@ -49,5 +51,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - janschulz
+    - jankatins
     - SylvainCorlay
