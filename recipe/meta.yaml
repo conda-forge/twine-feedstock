@@ -9,7 +9,6 @@ source:
   url: https://pypi.io/packages/source/t/twine/twine-{{ version }}.tar.gz
   sha256: 7d89bc6acafb31d124e6e5b295ef26ac77030bf098960c2a4c4e058335827c5c
 
-
 build:
   noarch: python
   number: 0
