@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About twine
 ===========
 
@@ -18,8 +14,15 @@ Summary: Collection of utilities for interacting with PyPI
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/twine-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/twine-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5844&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/twine-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
