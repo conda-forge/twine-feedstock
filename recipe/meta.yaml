@@ -21,6 +21,7 @@ requirements:
     - pip
     - python >=3.6
     - setuptools >=0.7.0
+    - setuptools_scm >=1.15
   run:
     - python >=3.6
     - pkginfo >=1.4.2
