@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: twine
@@ -7,12 +7,12 @@ package:
 source:
   fn: twine-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/t/twine/twine-{{ version }}.tar.gz
-  sha256: 9fe7091715c7576df166df8ef6654e61bada39571783f2fd415bdcba867c6993
+  sha256: 8d85e75338c97ea7ed04330b1dce1d948ce83cec333fb9a0e26a11ffdc4a40dd
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - twine = twine.__main__:main
 
@@ -21,6 +21,7 @@ requirements:
     - pip
     - python >=3.6
     - setuptools >=0.7.0
+    - setuptools_scm >=1.15
   run:
     - python >=3.6
     - pkginfo >=1.4.2
