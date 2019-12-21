@@ -11,20 +11,21 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: true  # [py<36]
   entry_points:
     - twine = twine.__main__:main
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
     - setuptools >=0.7.0
     - setuptools_scm >=1.15
   run:
-    - importlib_metadata  [py<38]
+    - importlib_metadata  # [py<38]
     - keyring >=15.1
     - pkginfo >=1.4.2
-    - python >=3.6
+    - python
     - readme_renderer >=21.0
     - requests >=2.20
     - requests-toolbelt >=0.8.0,!=0.9.0
