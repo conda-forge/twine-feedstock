@@ -33,12 +33,26 @@ requirements:
     - tqdm >=4.14
 
 test:
+  requires:
+    - coverage
+    - jaraco.envs
+    - munch
+    - portend
+    - pretend
+    - pytest
+    - pytest-services
+  source_files:
+    - setup.py
+    - tests
+    - tox.ini
+    - twine
   imports:
     - twine
     - twine.commands
   commands:
     - twine --version
     - twine --help
+    - pytest -k "not get_password_runtime_error_suppressed"
 
 about:
   home: https://github.com/pypa/twine
