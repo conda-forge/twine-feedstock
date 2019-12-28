@@ -56,7 +56,7 @@ test:
   commands:
     - twine --version
     - twine --help
-    - pytest -k "not get_password_runtime_error_suppressed"
+    - pytest -k "not get_password_runtime_error_suppressed and not devpi_upload"
 
 about:
   home: https://github.com/pypa/twine
