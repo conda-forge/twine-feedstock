@@ -34,14 +34,17 @@ requirements:
 
 test:
   requires:
+    - {{ compiler('c') }}
     - coverage
     - git
     - jaraco.envs
     - munch
+    - pip
     - portend
     - pretend
     - pytest
     - pytest-services
+    - tox
   source_files:
     - setup.py
     - tests
