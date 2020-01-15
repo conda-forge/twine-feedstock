@@ -54,6 +54,7 @@ test:
     - twine
     - twine.commands
   commands:
+    - python -m pip check
     - twine --version
     - twine --help
     - pytest -k "not get_password_runtime_error_suppressed"  # [osx]
