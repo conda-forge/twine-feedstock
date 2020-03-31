@@ -9,7 +9,7 @@ source:
   sha256: d561a5e511f70275e5a485a6275ff61851c16ffcb3a95a602189161112d9f160
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py<36]
   entry_points:
@@ -33,12 +33,33 @@ requirements:
     - tqdm >=4.14
 
 test:
+  requires:
+    - {{ compiler('c') }}
+    - coverage
+    - git
+    - jaraco.envs
+    - munch
+    - pip
+    - portend
+    - pretend
+    - pytest
+    - pytest-services
+    - tox
+  source_files:
+    - setup.py
+    - tests
+    - tox.ini
+    - twine
   imports:
     - twine
     - twine.commands
   commands:
+    - python -m pip check
     - twine --version
     - twine --help
+    - pytest -k "not get_password_runtime_error_suppressed"  # [osx]
+    - pytest -k "not get_password_runtime_error_suppressed and not devpi_upload"  # [linux]
+    - pytest -k "not get_password_runtime_error_suppressed and not devpi_upload and not pypiserver_upload"  # [win]
 
 about:
   home: https://github.com/pypa/twine
