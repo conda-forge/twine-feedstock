@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools_scm >=1.15
   run:
     - colorama >=0.4.3
@@ -26,7 +26,7 @@ requirements:
     - keyring >=15.1
     - pkginfo >=1.4.2
     - packaging >= 16.2
-    - python
+    - python >=3.6
     - readme_renderer >=21.0
     - requests >=2.20
     - requests-toolbelt >=0.8.0,!=0.9.0
