@@ -1,4 +1,4 @@
-{% set version = "3.3.0" %}
+{% set version = "3.4.0" %}
 
 package:
   name: twine
@@ -6,35 +6,31 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/twine/twine-{{ version }}.tar.gz
-  sha256: fcffa8fc37e8083a5be0728371f299598870ee1eccc94e9a25cef7b1dcfa8297
+  sha256: 101f1c43ea4587ab19261d09157c63b6f37a0e55b215f0dd26304df1d49b620c
 
 build:
-  number: 1
+  noarch: python
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: true  # [py<36]
   entry_points:
     - twine = twine.__main__:main
 
 requirements:
-  build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - pip
-    - python
-    - setuptools >=0.7.0
+    - python >=3.6
     - setuptools_scm >=1.15
   run:
     - colorama >=0.4.3
-    - importlib_metadata  # [py<38]
+    - importlib_metadata >=3.6
     - keyring >=15.1
     - pkginfo >=1.4.2
-    - python
+    - packaging >=16.2
+    - python >=3.6
     - readme_renderer >=21.0
     - requests >=2.20
     - requests-toolbelt >=0.8.0,!=0.9.0
     - rfc3986 >=1.4.0
-    - setuptools >=0.7.0
     - tqdm >=4.14
 
 test:
@@ -44,7 +40,7 @@ test:
     - twine
     - twine.commands
   commands:
-    - python -m pip check
+    - pip check
     - twine --version
     - twine --help
 
