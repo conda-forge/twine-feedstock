@@ -1,4 +1,4 @@
-{% set version = "3.6.0" %}
+{% set version = "3.7.0" %}
 
 package:
   name: twine
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/twine/twine-{{ version }}.tar.gz
-  sha256: 4caad5ef4722e127b3749052fcbffaaf71719b19d4fd4973b29c469957adeba2
+  sha256: 8d6a0ad895576c97e9ad4a5da2d6adea37fd5434ecabace0054013d537ddbc6c
 
 build:
   noarch: python
@@ -23,8 +23,7 @@ requirements:
     - colorama >=0.4.3
     - importlib_metadata >=3.6
     - keyring >=15.1
-    - pkginfo >=1.4.2
-    - packaging >=16.2
+    - pkginfo >=1.8.1
     - python >=3.6
     - readme_renderer >=21.0
     - requests >=2.20
