@@ -23,8 +23,7 @@ requirements:
     - colorama >=0.4.3
     - importlib_metadata >=3.6
     - keyring >=15.1
-    - pkginfo >=1.4.2
-    - packaging >=16.2
+    - pkginfo >=1.8.1
     - python >=3.6
     - readme_renderer >=21.0
     - requests >=2.20
