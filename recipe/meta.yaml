@@ -1,4 +1,4 @@
-{% set version = "3.7.1" %}
+{% set version = "3.8.0" %}
 
 package:
   name: twine
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/twine/twine-{{ version }}.tar.gz
-  sha256: 28460a3db6b4532bde6a5db6755cf2dce6c5020bada8a641bb2c5c7a9b1f35b8
+  sha256: 8efa52658e0ae770686a13b675569328f1fba9837e5de1867bfe5f46a9aefe19
 
 build:
   noarch: python
