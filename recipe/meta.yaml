@@ -19,10 +19,10 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - setuptools >=45.0
+    - setuptools >=61.2.0
     - setuptools_scm >=6.0
   run:
-    - importlib_metadata >=3.6
+    - importlib-metadata >=3.6
     - keyring >=15.1
     - pkginfo >=1.8.1
     - python >=3.8
