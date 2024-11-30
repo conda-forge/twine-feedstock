@@ -1,12 +1,12 @@
-{% set version = "5.1.1" %}
+{% set version = "6.0.0" %}
 
 package:
   name: twine
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/t/twine/twine-{{ version }}.tar.gz
-  sha256: 9aa0825139c02b3434d913545c7b847a21c835e11597f5255842d457da2322db
+  url: https://pypi.org/packages/source/t/twine/twine-{{ version }}.tar.gz
+  sha256: 9a9b815b3bad3186cc85be92294d8e2509558e0315d69ed746c0594419c835de
 
 build:
   noarch: python
