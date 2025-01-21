@@ -1,4 +1,4 @@
-{% set version = "6.0.1" %}
+{% set version = "6.1.0" %}
 
 {% set python_min = python_min | default("3.9") %}
 
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/twine/twine-{{ version }}.tar.gz
-  sha256: 36158b09df5406e1c9c1fb8edb24fc2be387709443e7376689b938531582ee27
+  sha256: be324f6272eff91d07ee93f251edf232fc647935dd585ac003539b42404a8dbd
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
   entry_points:
     - twine = twine.__main__:main
