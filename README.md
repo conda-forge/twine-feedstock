@@ -9,7 +9,7 @@ Package license: Apache-2.0
 
 Summary: Collection of utilities for interacting with PyPI
 
-Documentation: https://twine.readthedocs.io
+Documentation: https://twine.readthedocs.io/
 
 Current build status
 ====================
