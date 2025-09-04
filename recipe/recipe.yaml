@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 6.1.0
+  version: "6.2.0"
 
 package:
   name: twine
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/twine/twine-${{ version }}.tar.gz
-  sha256: be324f6272eff91d07ee93f251edf232fc647935dd585ac003539b42404a8dbd
+  sha256: e5ed0d2fd70c9959770dce51c8f39c8945c574e18173a7b81802dab51b4b75cf
 
 build:
   number: 0
