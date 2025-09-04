@@ -25,12 +25,12 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools >=61.2.0
+    - setuptools >=77.0.3
     - setuptools_scm >=6.0
   run:
     - id
     - importlib-metadata >=3.6
-    - keyring >=15.1
+    - keyring >=21.2.0
     - packaging >=24.0
     - python >=${{ python_min }}
     - readme_renderer >=35.0
@@ -43,13 +43,15 @@ requirements:
 tests:
   - python:
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - 3.13.*
       imports:
         - twine
         - twine.commands
   - requirements:
       run:
-        - python ${{ python_min }}
+        - python ${{ python_min }}.*
     script:
       - twine --version
       - twine --help
