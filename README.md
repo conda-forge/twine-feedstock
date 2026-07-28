@@ -3,11 +3,13 @@ About twine-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/twine-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/pypa/twine
+Home: https://pypi.org/project/twine
 
 Package license: Apache-2.0
 
 Summary: Collection of utilities for interacting with PyPI
+
+Development: https://github.com/pypa/twine
 
 Documentation: https://twine.readthedocs.io/
 
